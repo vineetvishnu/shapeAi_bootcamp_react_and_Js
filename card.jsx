@@ -3,7 +3,7 @@ import { BiBadgeCheck } from "react-icons/bi";
 import { BiCalendar } from "react-icons/bi";
 import { AiOutlineProject } from "react-icons/ai";
 import { MdPeopleOutline } from "react-icons/md";
-import reactandjs from './images/reactandjs.jpg';
+import reactandjs from './reactandjs.jpg';
 
 
 function Card() {
