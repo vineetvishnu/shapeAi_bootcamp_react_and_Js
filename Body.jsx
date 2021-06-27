@@ -1,6 +1,6 @@
 import { returnStatement } from '@babel/types';
 import React from 'react';
-import Card from './Card';
+import Card from './card';
 import Cdata from './Cdata';
 
 function bootcard(val){
