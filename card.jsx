@@ -9,7 +9,7 @@ import reactandjs from './reactandjs.jpg';
 function Card() {
     return (
         <div className="card">
-        <img src={reactandjs} /><a>Free</a>
+        <img src={reactandjs} /><a href="javascript:void(0)">Free</a>
         <div className="card-content">
             <div className="card-title">
               <h2>Bootcamp on ReactJs and <br />JavaScript</h2>
