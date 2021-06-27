@@ -1,16 +1,24 @@
+import { returnStatement } from '@babel/types';
 import React from 'react';
-import Card from './card';
+import Card from './Card';
+import Cdata from './Cdata';
+
+function bootcard(val){
+    return (
+    <Card
+    imgsrc={val.imgsrc}
+    ctitle={val.ctitle}
+     />
+     )
+}
 
 function Body() {
     return (
+        <>
         <body>
-            <div className="main">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            </div>
+          {Cdata.map(bootcard)}
         </body>
+        </>
     );
 }
 
