@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-family:'Times New Roman', Times, serif;
 }
 
 body{
-    background-color: rgb(253, 253, 232);
+    width: 100vw;
+    background-color: #eee;
     overflow-x: hidden;
 }
-.main{
-    display: flex;
-    margin-bottom: 50px;
-}
+
 header{
-    overflow-x: hidden;
+    width: 100vw;
+    height: auto;
     background-color: rgb(52, 52, 255);
-    padding: 16px 40px;
-   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
 }
 header h1{
     color: #fff;
-    font-size: 2.5em;
+    padding: 3%;
+    height: auto;
     font-family: 'McLaren', cursive;
     font-weight: 200;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+header h1:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(5px, 5px, 5px, 0.9);
+
 }
 
 
@@ -37,13 +38,14 @@ header h1{
     background-color: #fff;
     width: 270px;
 	height: auto;
-    margin: 20px;;
+    margin: 5%;;
     padding-bottom: 10px;
 	padding: px;
 	border-radius: 2%;
 	transition: .5s ease;
 	transform: scale(0.98);
 	overflow: hidden;
+    float: left;
 	outline: none;
 	box-shadow: 0 8px 34px -15px rgba(0, 0, 0, 1);
 }
@@ -53,48 +55,54 @@ header h1{
 .card img{
     overflow: hidden;
     width: 100%;
-    opacity: 0.9;
-    margin: 0;
+    margin: 4px;
     height: auto;
-	border-top-left-radius: 2%;
-	border-top-right-radius: 2%;
-    transition: transform 0.5s ease;
+	border-radius: 3%;
+    filter: drop-shadow(2px 6px 8px rgba(0, 0, 0, 0.5));
+    transition: 0.5s ease;
 }
-.card:hover img{
-    opacity: 1;
-    transform: scale(1.06);
+.card img:hover{
+    cursor: pointer;
+    transform: rotate(-3deg);
+    filter: drop-shadow(1px 15px 8px rgba(0, 0, 0, 0.5));
+
 }
-.card h2{
-    text-align: center;
-    color: #000;
-    font-size: 1.5em;
-    font-weight: 500;
-}
+
 .card a{
-     position: absolute;
-     top: 0;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
     right: -3px;
-     filter: drop-shadow(2px 3px 2px rgba(black, 0.5));
+    filter: drop-shadow(2px 4px 6px rgba(black, 0.8));
     color: white;
     background-color: red;
-    border-bottom-left-radius: 40px;
-    padding: 15px ;
+    border-bottom-left-radius: 50px;
+    padding: 17px ;
     font-size: 1.25rem;
     text-align: center;
     font-weight: 400;
     transition: all 0.5s ease;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
 }
+
 .card:hover a{
     padding: 30px;
 }
+
+.card h2{
+    text-align: center;
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 550;
+}
 .card h2:hover {
-    color: #2b2b2b;
+    color: #ff0000;
     cursor: pointer;
 }
 .card p{
     font-size: 1.1em;
     margin: 10px;
+    font-family: 'Benne', serif;
     white-space: pre-wrap;
     word-wrap: break-word;
     color: #eee;
@@ -124,14 +132,17 @@ hr{
 .btn{
     margin: 0px 10px;
     width: 92%;
-    color: #fff;
-    background-color: rgb(238, 62, 62);
+    color: #000;
+    background-color: rgb(255, 79, 79);
     border: 0;
     border-radius: 50px;
     padding: 10px;
     font-size: 15px;
+    filter: drop-shadow(1px 6px 8px rgba(0, 0, 0, 0.4));
+    transition: 0.5s ease;;
 }
 .btn:hover{
+    color: #fff;
     background-color: red;
     cursor: pointer;
 }
@@ -147,8 +158,11 @@ footer{
 footer p{
     color: #8a0039;
 }
-@media (max-width:769px) {
-    .main{
-       flex-wrap: wrap;
+
+@media (max-width:429px) {
+
+  .card{
+    float: none;
+    margin : 7% auto ;
     }
 }
